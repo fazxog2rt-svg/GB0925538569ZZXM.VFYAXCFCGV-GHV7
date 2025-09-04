@@ -1,0 +1,1 @@
+document.getElementById('genCert').addEventListener('click',()=>{const {jsPDF}=window.jspdf;const doc=new jsPDF();doc.text('Sertifikat Indonesia Bisa 2025',20,20);doc.text('Diberikan kepada: '+document.getElementById('certName').value,20,40);doc.save('sertifikat.pdf');});

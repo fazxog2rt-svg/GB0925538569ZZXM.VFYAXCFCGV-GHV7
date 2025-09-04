@@ -1,0 +1,1 @@
+fetch('data/leaderboard.json').then(r=>r.json()).then(d=>{const tb=document.getElementById("leaderboard");tb.innerHTML='<tr><th>Nama</th><th>Skor</th></tr>';d.forEach(n=>{tb.innerHTML+=`<tr><td>${n.nama}</td><td>${n.skor}</td></tr>`});});
