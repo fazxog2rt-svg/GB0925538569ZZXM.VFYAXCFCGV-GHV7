@@ -1,1 +1,0 @@
-fetch('data/berita.json').then(r=>r.json()).then(d=>{const c=document.getElementById("newsList");d.forEach(n=>{const div=document.createElement("div");div.className="p-4 bg-slate-800 rounded";div.innerHTML=`<h2 class='font-bold'>${n.judul}</h2><p>${n.isi}</p>`;c.appendChild(div);});});

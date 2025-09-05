@@ -1,1 +1,0 @@
-document.getElementById("regForm").addEventListener("submit",e=>{e.preventDefault();let name=e.target[0].value;let qr=new QRCode(document.getElementById("qrcode"),{text:"Tiket:"+name,width:128,height:128});});
